@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linfy Tech Solutions - Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Title and Description -->
+        <h1 id="title">Linfy Tech Solutions Feedback</h1>
+        <p id="description">We appreciate your input! Please take a moment to complete this survey.</p>
+
+        <!-- Survey Form -->
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+
+            <!-- Email Input -->
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email address" required>
+
+            <!-- Number Input -->
+            <label id="number-label" for="number">How many times have you used our services?</label>
+            <input id="number" type="number" min="1" max="100" placeholder="Enter a number" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">What service did you use?</label>
+            <select id="dropdown">
+                <option value="repair">Device Repair</option>
+                <option value="tech-support">Tech Support</option>
+                <option value="consultation">Consultation</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <p>How satisfied are you with our service?</p>
+            <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
+            <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+            <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+            <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+
+            <!-- Checkboxes -->
+            <p>Which of our services have you used? (Select all that apply)</p>
+            <label><input type="checkbox" name="services" value="repair"> Device Repair</label>
+            <label><input type="checkbox" name="services" value="tech-support"> Tech Support</label>
+            <label><input type="checkbox" name="services" value="consultation"> Consultation</label>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
